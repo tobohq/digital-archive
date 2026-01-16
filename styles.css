@@ -1,0 +1,21 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.background-cover{
+    width: 100%;
+    min-height: 150px;
+    background-color: pink;
+    justify-content: center;
+
+}
+
+.background-cover h1{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
