@@ -1,0 +1,1 @@
+Humanities Digital Archive for Winter Quarter and Spring Quarter 2026 
