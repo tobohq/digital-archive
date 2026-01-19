@@ -1,7 +1,17 @@
+/* color pallete: 
+darkbrown: #664027
+brown: #8b6a4d
+lightbrown: #c09c82
+lightgreen: #98a674
+darkgreen: #686e41
+*/
 
-* {
-    box-sizing: border-box;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Milky Nice";
+    letter-spacing: 0.095em;
 }
 
 /* Header */
@@ -14,7 +24,7 @@ header{
 .nav-links{
     display: flex;
     flex-direction: row;
-    border: 2px red solid;
+    background: linear-gradient();
 }
 
 .background-cover{
