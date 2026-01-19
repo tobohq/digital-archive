@@ -1,0 +1,101 @@
+/* color pallete: 
+darkbrown: #664027
+brown: #8b6a4d
+lightbrown: #c09c82
+lightgreen: #98a674
+darkgreen: #686e41
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Milky Nice";
+    letter-spacing: 0.095em;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    padding: 10px 16px;
+    margin: 0;
+    list-style: none;
+
+    background: linear-gradient(0deg, #98a674, #c1cea2);
+}
+
+/* keep links above the indicator */
+.nav-links li{ 
+    position: relative; 
+    z-index: 2; 
+}
+
+.nav-links a{
+    position: relative; 
+    z-index: 2; 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 5vh;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+
+/* the sliding background */
+.nav-indicator{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 42px;
+
+    transform: translateY(-50%);
+    border-radius: 5vh;
+    background: linear-gradient(0deg, #c09c82, #d1b39d);
+
+    transition: left .5s ease, width .5s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.background-cover{
+    background-image: url(../images/cover.gif); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-cover h1{
+    font-size: 6vh;
+    color: rgb(32, 96, 35);
+    font-family: url(fonts/MilkyNice.otf);
+}
+
+/* Body */
+
+body{
+    margin: 0;
+    background-color: #98a674;
+}
+
