@@ -99,3 +99,23 @@ body{
     background-color: #98a674;
 }
 
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-boxes{
+    width: 80%;
+    padding: 1vh;
+    display: flex;
+    flex: row;
+    gap: 10px;
+}
+
+.flex-boxes img{
+    width: 40vh;
+}
+

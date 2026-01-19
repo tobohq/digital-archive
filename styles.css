@@ -96,7 +96,7 @@ header {
 
 body{
     margin: 0;
-    background-color: #98a674;
+    background: linear-gradient(180deg, #98a674, #c1cea2);
     padding-bottom: 2vh;
 }
 
@@ -106,17 +106,30 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 1vh;
+    margin: 2vh;
+}
+
+.about-me img{
+    width: 45vh;
+    padding: 1vh;
+    border: #8b6a4d 6px double;
+}
+
+.about-me p{
+    width: 80vh;
+    text-align: center;
+}
+
+#text{
+    padding: 1vh;
 }
 
 .flex-boxes{
-    width: 80%;
+    width: 90%;
     padding: 1vh;
     display: flex;
     flex: row;
     gap: 10px;
-}
-
-.flex-boxes img{
-    width: 40vh;
 }
 
