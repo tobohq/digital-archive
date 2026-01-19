@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Page</title>
+
+    <!-- linking css -->
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="fonts.css">
+
+    <!-- linking online stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
 </head>
 <header>
+
+    <!-- navbar -->
+    <ul class="nav-links">
+        <li> <a href = "index.html"> <i class="fa-solid fa-house"></i> Home </a></li>
+        <li> <a href = "index.html"> <i class="fa-solid fa-snowflake"></i> Winter Quarter </a></li>
+        <li> <a href = "index.html"> <i class="fa-solid fa-sun"></i> Spring Quarter </a></li>
+    </ul>
+
     <div class = "background-cover">
-        <h1 class = "center"> Digital Archive </h1>
+        <h1 class="center"> Jayce Digital Archive </h1>
     </div>
 
-    <ul class="nav-links">
-        <li> <a href = "index.html"> Home </a></li>
-        <li> <a href = "index.html"> Home </a></li>
-    </ul>
 </header>
+
 <body>
-    <p>This is a sample HTML page to demonstrate the structure of an HTML document.</p>
-    <div>
-        <p> hiiii </p>
+    <div class="about-me">
+        <h1> Who is Jayce </h1>
+        <div class = "flex-boxes">
+            <img src = url("images/selfie.JPG")>
+            <p> about me description </p>
+        </div>
     </div>
 </body>
+
+<footer>
+
+</footer>
 
 </html>

@@ -4,18 +4,41 @@
     margin: 0;
 }
 
-.background-cover{
-    width: 100%;
-    min-height: 150px;
-    background-color: pink;
-    justify-content: center;
+/* Header */
 
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    border: 2px red solid;
+}
+
+.background-cover{
+    background-image: url(images/cover.gif); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-cover h1{
-    text-align: center;
+    font-size: 6vh;
+    color: rgb(32, 96, 35);
+    font-family: url(fonts/MilkyNice.otf);
 }
+
+/* Body */
 
 body{
     margin: 0;
+    background-color: rgb(219, 245, 208);
 }
+
