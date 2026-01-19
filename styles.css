@@ -75,7 +75,7 @@ header {
 }
 
 .background-cover{
-    background-image: url(images/cover.gif); 
+    background-image: url(../images/cover.gif); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,5 +97,27 @@ header {
 body{
     margin: 0;
     background-color: #98a674;
+    border: 2px solid red;
+    padding-bottom: 2vh;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-boxes{
+    width: 80%;
+    padding: 1vh;
+    display: flex;
+    flex: row;
+    gap: 10px;
+}
+
+.flex-boxes img{
+    width: 40vh;
 }
 
