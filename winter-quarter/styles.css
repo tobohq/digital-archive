@@ -36,7 +36,7 @@ header {
     margin: 0;
     list-style: none;
 
-    background: linear-gradient(0deg, #98a674, #c1cea2);
+    background: linear-gradient(0deg, #8cadb5, #90E0EF);
 }
 
 /* keep links above the indicator */
@@ -75,7 +75,7 @@ header {
 }
 
 .background-cover{
-    background-image: url(../images/cover.gif); 
+    background-image: url(../images/winter.gif); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,8 +87,9 @@ header {
 }
 
 .background-cover h1{
-    font-size: 6vh;
-    color: rgb(32, 96, 35);
+    font-size: 10vh;
+    color: #CAF0F8;
+    -webkit-text-stroke: 1px #908278;
     font-family: url(fonts/MilkyNice.otf);
 }
 
@@ -96,23 +97,27 @@ header {
 
 body{
     margin: 0;
-    background-color: #98a674;
+    background: linear-gradient(40deg, #CAF0F8, #90E0EF);
+    color: #c09c82;
 }
 
-.about-me{
+.learning-outcomes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
+    padding: 2vh;
 }
 
 .flex-boxes{
-    width: 80%;
-    padding: 1vh;
     display: flex;
     flex: row;
-    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    padding: 2vh;
+    gap: 5vh;
 }
 
 .flex-boxes img{
