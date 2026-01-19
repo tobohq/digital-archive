@@ -20,24 +20,57 @@ header{
     display: flex;
     flex-direction: column;
 }
-
 .nav-links{
-    width: 100%;
-    min-height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 10px;
-    background: linear-gradient(0deg, #98a674, #c1cea2);
+  position: relative;
+  width: 100%;
+  min-height: 5vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  padding: 10px 16px;
+  margin: 0;
+  list-style: none;
+
+  background: linear-gradient(0deg, #98a674, #c1cea2);
 }
 
+/* keep links above the indicator */
+.nav-links li { position: relative; z-index: 2; }
+
 .nav-links a{
-    padding: 2px 10px;
-    text-decoration: none;
-    color: white;
-    /* border: 1px red solid; */
-    justify-self: center;
-    text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+
+/* the sliding background "pill" */
+.nav-indicator{
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  height: 42px;               /* should roughly match link height */
+  width: 0px;
+
+  transform: translateY(-50%);
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(6px);
+
+  transition: left 220ms ease, width 220ms ease;
+  pointer-events: none;        /* 🔥 prevents hover glitch */
+  z-index: 1;                  /* behind links */
 }
 
 .background-cover{
