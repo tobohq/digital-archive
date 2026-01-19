@@ -1,1 +1,4 @@
-Humanities Digital Archive for Winter Quarter and Spring Quarter 2026 
+# Humanities Digital Archive
+
+A custom website for UCI Humanities Core:
+- Jayce's Digital Archive
