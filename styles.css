@@ -26,16 +26,13 @@ header {
     position: relative;
     width: 100%;
     min-height: 5vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 14px;
-
     padding: 10px 16px;
     margin: 0;
     list-style: none;
-
     background: linear-gradient(0deg, #98a674, #c1cea2);
 }
 
@@ -87,9 +84,11 @@ header {
 }
 
 .background-cover h1{
-    font-size: 6vh;
-    color: rgb(32, 96, 35);
+    font-size: 9vh;
+    color: #c09c82;
     font-family: url(fonts/MilkyNice.otf);
+    -webkit-text-stroke: 1px #8b6a4d;
+    text-align: center;
 }
 
 /* Body */

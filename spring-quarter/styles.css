@@ -99,3 +99,11 @@ body{
     background-color: #98a674;
 }
 
+.learning-outcomes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    padding: 2vh;
+}
+
