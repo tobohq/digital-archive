@@ -16,61 +16,62 @@ darkgreen: #686e41
 
 /* Header */
 
-header{
+header {
     display: flex;
     flex-direction: column;
 }
+
 .nav-links{
-  position: relative;
-  width: 100%;
-  min-height: 5vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 5vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
 
-  padding: 10px 16px;
-  margin: 0;
-  list-style: none;
+    padding: 10px 16px;
+    margin: 0;
+    list-style: none;
 
-  background: linear-gradient(0deg, #98a674, #c1cea2);
+    background: linear-gradient(0deg, #98a674, #c1cea2);
 }
 
 /* keep links above the indicator */
-.nav-links li { position: relative; z-index: 2; }
-
-.nav-links a{
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-
-  padding: 10px 14px;
-  border-radius: 999px;
-
-  text-decoration: none;
-  color: white;
-  white-space: nowrap;
+.nav-links li{ 
+    position: relative; 
+    z-index: 2; 
 }
 
-/* the sliding background "pill" */
+.nav-links a{
+    position: relative; 
+    z-index: 2; 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 5vh;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+
+/* the sliding background */
 .nav-indicator{
-  position: absolute;
-  top: 50%;
-  left: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 42px;
 
-  height: 42px;               /* should roughly match link height */
-  width: 0px;
+    transform: translateY(-50%);
+    border-radius: 5vh;
+    background: linear-gradient(0deg, #c09c82, #d1b39d);
 
-  transform: translateY(-50%);
-  border-radius: 999px;
-
-  background: rgba(255,255,255,0.18);
-  backdrop-filter: blur(6px);
-
-  transition: left 220ms ease, width 220ms ease;
-  pointer-events: none;        /* 🔥 prevents hover glitch */
-  z-index: 1;                  /* behind links */
+    transition: left .5s ease, width .5s ease;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .background-cover{
