@@ -12,3 +12,8 @@
     font-family: "Coolvetica";
     src: url(fonts/coolvetica\ rg.otf);
 }
+
+@font-face {
+    font-family: "Arial Rounded";
+    src: url(fonts/Arial\ Rounded\ Bold.ttf);
+}
