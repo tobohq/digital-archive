@@ -16,4 +16,6 @@
 @font-face {
     font-family: "Arial Rounded";
     src: url(fonts/Arial\ Rounded\ Bold.ttf);
+    font-size: large;
+    font-weight: 1000vh;
 }
