@@ -11,7 +11,6 @@ darkgreen: #686e41
     padding: 0;
     box-sizing: border-box;
     font-family: "Arial Rounded";
-    letter-spacing: 0.095em;
 }
 
 /* Header */
@@ -77,17 +76,16 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 100%;
-    min-height: 60vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .background-cover h1{
-    font-size: 9vh;
+    font-size: 12vh;
     color: #c09c82;
-    font-family: url(fonts/MilkyNice.otf);
-    -webkit-text-stroke: 1px #8b6a4d;
+    -webkit-text-stroke: 1.5px #8b6a4d;
     text-align: center;
 }
 
@@ -95,8 +93,21 @@ header {
 
 body{
     margin: 0;
-    background: linear-gradient(180deg, #98a674, #c1cea2);
-    padding-bottom: 2vh;
+    background-image: url("images/gif\ wall.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    color: #c09c82;
+}
+
+.flex-boxes{
+    width: 100%;
+    padding: 2vh;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-me{
@@ -104,31 +115,29 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 1vh;
-    margin: 2vh;
+    padding: 2vh;
+    width: 40%;
+    height: 90vh;
+    /* background-color: #303620; */
+    color: #dbaf90;
+    background: linear-gradient(150deg, #70785b, #849d49);
 }
 
 .about-me img{
     width: 45vh;
-    padding: 1vh;
+    margin: 2vh;
     border: #8b6a4d 6px double;
 }
 
 .about-me p{
-    width: 80vh;
+    width: 60vh;
+    height: 10vh;
+    color: #4e3a2a;
+    font-size: 2.3vh;
     text-align: center;
+    bottom: 0;
+    padding: 2vh;
+    margin-top: -2vh;
+    margin-bottom: 3vh;
+    /* border: solid 2px red; */
 }
-
-#text{
-    padding: 1vh;
-}
-
-.flex-boxes{
-    width: 90%;
-    padding: 1vh;
-    display: flex;
-    flex: row;
-    gap: 10px;
-}
-
